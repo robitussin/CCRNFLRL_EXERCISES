@@ -32,7 +32,7 @@ $$
 $$
 
 Where:  
-- $\(\bar{X}_j\) = Average reward for machine \(j\)$  
+- $\(\bar{X}_j\)$ = Average reward for machine $\(j\)$  
 - \(n\) = Total pulls so far  
 - $\(n_j\)$ = Pulls of machine $\(j\)$  
 
