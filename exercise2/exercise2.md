@@ -1,22 +1,3 @@
-<style>
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 10px;
-  }
-  th, td {
-    border: 1px solid black;
-    padding: 6px;
-    text-align: center;
-  }
-  th {
-    background-color: #f2f2f2;
-  }
-  h1, h2, h3 {
-    text-align: center;
-  }
-</style>
-
 # 🎰 Exercise 2
 
 ---
@@ -89,6 +70,3 @@ Where:
 - At the end, compare results for all strategies.
 
 ---
-
-**Name:** ****\*\*****\_\_****\*\*****  
-**Date:** ****\*\*****\_\_****\*\*****
