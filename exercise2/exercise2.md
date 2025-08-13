@@ -33,8 +33,8 @@ $$
 
 Where:  
 - $Q_i(a)$ = Average reward for machine $\(i\)$  
-- \(n\) = Total pulls so far  
-- $\(n_j\)$ = Pulls of machine $\(j\)$  
+- $t$ = Total pulls so far  
+- $n_i(a)$ = Pulls of machine $\(i\)$  
 
 ---
 
