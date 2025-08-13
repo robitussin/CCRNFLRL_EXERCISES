@@ -1,13 +1,13 @@
-# 🎰 Slot Machine Strategy Activity
+# Exercise 2
 
 ---
 
-## 🎯 Objective
+## Objective
 Find out which slot machine gives the most reward using three different strategies.
 
 ---
 
-## 🕹 Setup
+## Setup
 - **Credits:** 300 pulls  
 - **Machines:** A, B, C  
 - **Cost per pull:** 1 credit  
@@ -15,7 +15,7 @@ Find out which slot machine gives the most reward using three different strategi
 
 ---
 
-## 📊 Strategies
+## Strategies
 
 **1. Explore Only**  
 Play each machine an equal number of times (100 pulls each).  
@@ -36,7 +36,7 @@ Where:
 
 ---
 
-## 📝 Recording Table – Explore / Exploit
+## Recording Table – Explore / Exploit
 
 | Pull # | Strategy     | Machine | Reward | Total Reward | Regret |
 |--------|--------------|---------|--------|--------------|--------|
@@ -48,7 +48,7 @@ Where:
 
 ---
 
-## 📝 Recording Table – UCB
+## Recording Table – UCB
 
 | Pull # | Machine | Reward | Avg Reward | Exploration Bonus | UCB Score | Total Reward | Regret |
 |--------|---------|--------|------------|-------------------|-----------|--------------|--------|
@@ -60,12 +60,8 @@ Where:
 
 ---
 
-## 📌 Notes
+## Notes
 - **Regret** = Best possible reward – Your reward
 - **Exploration Bonus** comes from \(\sqrt{\frac{2 \ln n}{n_j}}\)  
 - Be honest when recording rewards.
 - At the end, compare results for all strategies.
-
----
-**Name:** ______________________  
-**Date:** ______________________
