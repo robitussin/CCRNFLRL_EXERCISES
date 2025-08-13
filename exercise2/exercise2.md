@@ -27,14 +27,16 @@ Try each machine once at the start. Pick the highest reward and play only that m
 
 **3. UCB (Upper Confidence Bound)**  
 Play each machine once, then pick based on:
-\[
+
+$$
 \text{UCB} = \bar{X}\_j + \sqrt{\frac{2 \ln n}{n_j}}
-\]
+$$
+
 Where:
 
-- \(\bar{X}\_j\) = Average reward for machine \(j\)
-- \(n\) = Total pulls so far
-- \(n_j\) = Pulls of machine \(j\)
+- $\(\bar{X}\_j\)$ = Average reward for machine $\(j\)$
+- $\(n\)$ = Total pulls so far
+- $\(n_j\)$ = Pulls of machine $\(j\)$
 
 ---
 
@@ -65,7 +67,7 @@ Where:
 ## 📌 Notes
 
 - **Regret** = Best possible reward – Your reward
-- **Exploration Bonus** comes from \(\sqrt{\frac{2 \ln n}{n_j}}\)
+- **Exploration Bonus** comes from $\(\sqrt{\frac{2 \ln n}{n_j}}\)$
 - Be honest when recording rewards.
 - At the end, compare results for all strategies.
 
