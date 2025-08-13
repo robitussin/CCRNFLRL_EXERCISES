@@ -29,14 +29,14 @@ Try each machine once at the start. Pick the highest reward and play only that m
 Play each machine once, then pick based on:
 
 $$
-\text{UCB} = Q\_i + \sqrt{\frac{2 \ln t}{n_j}}
+\text{UCB} = Q\_i + \sqrt{\frac{2 \ln t}{n_i}}
 $$
 
 Where:
 
 - $\(\bar{X}\_j\)$ = Average reward for machine $\(j\)$
-- $\(n\)$ = Total pulls so far
-- $\(n_j\)$ = Pulls of machine $\(j\)$
+- $\(t\)$ = Total pulls so far
+- $\(n_i(a)\)$ = Pulls of machine $\(j\)$
 
 ---
 
