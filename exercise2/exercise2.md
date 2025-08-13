@@ -33,7 +33,7 @@ $$
 
 Where:  
 - $Q_i(a)$ = Average reward for machine $\(i\)$  
-- $t$ = Total pulls so far  
+- $t$ = Total pulls across all machines so far 
 - $n_i(a)$ = Pulls of machine $\(i\)$  
 
 ---
