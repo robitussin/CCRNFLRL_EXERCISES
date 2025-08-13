@@ -28,7 +28,7 @@ Try each machine once at the start. Pick the highest reward and play only that m
 Play each machine once, then pick based on:
 
 $$
-\text{UCB} = Q_i(a) + \sqrt{\frac{2 \ln t}{n_i(a)}}
+\text{UCB}_i(a) = Q_i(a) + \sqrt{\frac{2 \ln t}{n_i(a)}}
 $$
 
 Where:  
