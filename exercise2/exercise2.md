@@ -65,6 +65,6 @@ Where:
 
 ## Notes
 - **Regret** = Best possible reward – Your reward
-- **Exploration Bonus** comes from \(\sqrt{\frac{2 \ln n}{n_j}}\)  
+- **Exploration Bonus** comes from $\(\sqrt{\frac{2 \ln n}{n_j}}\)$  
 - Be honest when recording rewards.
 - At the end, compare results for all strategies.
