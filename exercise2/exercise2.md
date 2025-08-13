@@ -34,7 +34,8 @@ $$
 Where:  
 - $Q_i(a)$ = Average reward for machine $\(i\)$  
 - $t$ = Total pulls across all machines so far 
-- $n_i(a)$ = Pulls of machine $\(i\)$  
+- $n_i(a)$ = Pulls of machine $\(i\)$
+- \sqrt{\frac{2 \ln t}{n_i(a)}} = is the exploration bonus 
 
 ---
 
