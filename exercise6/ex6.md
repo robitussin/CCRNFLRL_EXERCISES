@@ -44,8 +44,10 @@ We have a **3×3 grid world**:
   $$
   \text{Target} = R + \gamma Q(s', a')
   $$
+  
   where \(a'\) is the _actual_ action chosen next.
-- **Q-learning target**:  
+- **Q-learning target**:
+  
   $$
   \text{Target} = R + \gamma \max\\_{a'} Q(s', a')
   $$
