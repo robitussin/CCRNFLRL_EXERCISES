@@ -40,13 +40,13 @@ We have a **3×3 grid world**:
 
 3. **For each step**, compute the **target** and update the Q-value:
 
-- **SARSA target**:
-- 
+**SARSA target**:
+  
 $$
 \text{Target} = R + \gamma Q(s', a')
 $$
   
-  where \(a'\) is the _actual_ action chosen next.
+where \(a'\) is the _actual_ action chosen next.
 
 ### SARSA Update Rule
 
@@ -54,7 +54,7 @@ $$
 Q(s, a) \leftarrow Q(s, a) + \alpha \Big[ r + \gamma Q(s', a') - Q(s, a) \Big]
 $$
   
-- **Q-learning target**:
+**Q-learning target**:
   
 $$
 \text{Target} = R + \gamma \max_{a'} Q(s', a')
