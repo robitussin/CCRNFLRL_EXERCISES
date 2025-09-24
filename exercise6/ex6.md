@@ -1,21 +1,24 @@
-# 🧩 Exercise: SARSA vs Q-learning in a 3×3 Maze
+# Exercise6: SARSA vs Q-learning in a 3×3 Maze
 
 ## Maze Setup
 
 We have a **3×3 grid world**:
 
 - **Start**: (0,0)
-- **Goal**: (2,2), reward = +1
+- **Cheese**: (0,2), reward = +1
+- **Cheese**: (2,2), reward = +3
 - **Poison**: (2,1), reward = –1
 - All other moves: reward = –0.1 (step cost)
-- Episode ends when agent reaches Goal or Poison.
+- Episode ends when the agent gets poison or moves 4 steps.
+
+<img src="Picture1.png">
 
 ---
 
 ## Parameters
 
-- Discount factor: \(\gamma = 1\)
-- Learning rate: \(\alpha = 0.5\)
+- Discount factor: $\gamma = 1$
+- Learning rate: $\alpha = 0.5$
 - Policy: ε-greedy (explores sometimes, exploits otherwise)
 - Initialize all Q-values to **0**.
 - Actions: **Up, Down, Left, Right** (assume blocked moves keep the agent in the same cell).
@@ -26,25 +29,26 @@ We have a **3×3 grid world**:
 
 1. **Draw the Q-table structure**:
 
-   - Rows = states \((i,j)\)
-   - Columns = actions \(\{U, D, L, R\}\)
+   - Rows = states $(i,j)$
+   - Columns = actions $\{U, D, L, R\}$
    - Initialize all entries to 0.
 
-2. **Simulate one episode** (you may choose an exploratory path). Example path:
+2. **Therea are two episodes** 
 
-- Write down the sequence of states, actions, and rewards.
+<img src="Picture2.png">
+<img src="Picture3.png">
 
 3. **For each step**, compute the **target** and update the Q-value:
 
 - **SARSA target**:  
-  \[
+  $$
   \text{Target} = R + \gamma Q(s', a')
-  \]
+  $$
   where \(a'\) is the _actual_ action chosen next.
 - **Q-learning target**:  
-  \[
-  \text{Target} = R + \gamma \max\_{a'} Q(s', a')
-  \]
+  $$
+  \text{Target} = R + \gamma \max\\_{a'} Q(s', a')
+  $$
 
 4. **Compare the updates**:
 
@@ -62,4 +66,4 @@ We have a **3×3 grid world**:
 
 ---
 
-**Deliverable:** Submit your Q-tables after 1 full episode for **both SARSA and Q-learning**, with step-by-step calculations.
+**Deliverable:** Submit your Q-tables after 2 full episode for **both SARSA and Q-learning**, with step-by-step calculations.
