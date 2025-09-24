@@ -57,7 +57,7 @@ $$
 - **Q-learning target**:
   
 $$
-\text{Target} = R + \gamma \max\\_{a'} Q(s', a')
+\text{Target} = R + \gamma \max_{a'} Q(s', a')
 $$
 
 ### Q-Learning Update Rule
