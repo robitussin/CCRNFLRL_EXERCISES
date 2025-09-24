@@ -47,10 +47,22 @@ $$
 $$
   
   where \(a'\) is the _actual_ action chosen next.
+
+### SARSA Update Rule
+
+$$
+Q(s, a) \leftarrow Q(s, a) + \alpha \Big[ r + \gamma Q(s', a') - Q(s, a) \Big]
+$$
+  
 - **Q-learning target**:
   
 $$
 \text{Target} = R + \gamma \max\\_{a'} Q(s', a')
+$$
+
+### Q-Learning Update Rule
+$$
+Q(s, a) \leftarrow Q(s, a) + \alpha \Big[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \Big]
 $$
 
 4. **Compare the updates**:
